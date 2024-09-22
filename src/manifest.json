@@ -10,5 +10,22 @@
         "32": "icon32.png",
         "48": "icon48.png",
         "128": "icon128.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icon16.png",
+            "32": "icon32.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Super Chat Currency Converter"
+    },
+    "options_page": "popup.html",
+    "background": {
+        "service_worker": "service-worker.js"
     }
 }
