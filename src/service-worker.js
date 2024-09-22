@@ -1,4 +1,4 @@
-const debug = true;
+const debug = false;
 
 // Fetch list of currencies from API on extension install, update and browser start
 const getCurrencies = async () => {
