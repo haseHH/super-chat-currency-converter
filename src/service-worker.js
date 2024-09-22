@@ -57,3 +57,16 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
         }
     }
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (debug) {
+        console.log(request);
+        console.log(sender);
+        console.log(sendResponse);
+        // sendResponse({ msg: "hello to you too" })
+    }
+    if (request === 'refreshData') {
+        getCurrencies()
+        getExchangeRate()
+    }
+});
